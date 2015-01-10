@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crewmate Kanban UI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+    <h2>Tasks (kanbanview)</h2>
+    <div id="board">
+      <div class="task-box">
+        <h5>Backlog</h5>
+      </div>
+      <div class="task-box">
+        <h5>To Do</h5>
+        <section class="task todo" draggable="true">
+          <li>Create Flash banners</li>
+        </section>
+      </div>
+      <div class="task-box">
+        <h5>Doing</h5>
+        <section class="task doing" draggable="true">
+          <li>Collect collateral for online marketing design</li>
+        </section>
+      </div>
+      <div class="task-box">
+        <h5>Done</h5>
+      </div>
+    </div>
+  </section>
+  <nav id="navbar"></nav>
+  <script src="js/drag.js"></script>
+</body>
