@@ -34,7 +34,7 @@ function handleDrop(e) {
 }
 
 var tasks = document.querySelectorAll('.task');
-var taskBoxs = document.querySelectorAll('.task-box');
+var taskBoxs = document.querySelectorAll('.task-box-content');
 
 [].forEach.call(tasks, function(task) {
   task.addEventListener('dragstart', handleDragStart, false);

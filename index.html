@@ -7,26 +7,43 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <h4>Tasks (kanbanview)</h4>
+  </header>
   <section>
-    <h2>Tasks (kanbanview)</h2>
     <div id="board">
       <div class="task-box">
-        <h5>Backlog</h5>
+        <h4>Backlog</h4>
+        <div class="task-box-content">
+          <section class="task backLog" draggable="true">
+            <li>Create Flash banners</li>
+          </section>
+        </div>
       </div>
       <div class="task-box">
-        <h5>To Do</h5>
-        <section class="task todo" draggable="true">
-          <li>Create Flash banners</li>
-        </section>
+        <h4>To Do</h4>
+        <div class="task-box-content">
+          <section class="task todo" draggable="true">
+            <li>Create Flash banners</li>
+          </section>
+        </div>        
       </div>
       <div class="task-box">
-        <h5>Doing</h5>
-        <section class="task doing" draggable="true">
-          <li>Collect collateral for online marketing design</li>
-        </section>
+        <h4>Doing</h4>
+        <div class="task-box-content">
+          <section class="task doing" draggable="true">
+            <li>Collect collateral for online marketing design</li>
+          </section>          
+        </div>
+        
       </div>
       <div class="task-box">
-        <h5>Done</h5>
+        <h4>Done</h4>
+        <div class="task-box-content">
+          <section class="task done" draggable="true">
+            <li>Collect collateral for online marketing design</li>
+          </section>      
+        </div>
       </div>
     </div>
   </section>

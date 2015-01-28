@@ -1,7 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 #navbar {
@@ -13,20 +17,47 @@ body {
   left: 0;
 }
 
+header {
+  background: white;
+  margin-left: 40px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding-left: 2%;
+  border-bottom: solid 1px #A9A9A9;
+  color: #A9A9A9;
+}
+
+header h4 {
+  font-size: 16px;
+}
+
 section {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 section h2 {
   font-weight: inherit;
 }
 
-h5 {
+.task-box {
+  background-color: #F5F5F5;
+  width: 20%;
+  -webkit-flex: auto;
+  flex: auto;
+  height: 600px;
+  float: left;
+  border-right: solid 6px #C0C0C0;
+  color: #454545;
+}
+
+.task-box h4 {
   text-align: center;
   text-transform: capitalize;
 }
 
 #board {
+  margin-top: 5%;
   width: 100%;
   display: -webkit-flex;
   display: flex;
@@ -34,15 +65,7 @@ h5 {
   flex-direction: row;
 }
 
-.task-box {
-  width: 20%;
-  -webkit-flex: auto;
-  flex: auto;
-  height: 500px;
-  float: left;
-}
-
-.task, .task-placeholder {
+.task-placeholder {
   width: 240px;
   height: 40px;
   float: left;
@@ -53,15 +76,47 @@ h5 {
   border-radius: 8px;
 }
 
+ .task-box-content  {
+  width: 240px;
+  height: 100px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 3px;
+}
+
 .task {
-  background: red;
+  width: 240px;
+  height: 85px;
+  padding-top: 15px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 3px;
   cursor: move;
 }
+
+.backLog {
+  background-color: #CFCFC4;
+}
+
+.todo {
+  background-color: #FDFD96;
+}
+
+.doing {
+  background-color: #FFB347;
+}
+
+.done {
+  background-color: #77DD77;
+}
+
 
 .task-placeholder {
   background: rgba(0,0,0,0.4);
 }
 
 .over {
-  border: 2px dashed #000;
+  border: 2px dashed #A9A9A9;
 }
